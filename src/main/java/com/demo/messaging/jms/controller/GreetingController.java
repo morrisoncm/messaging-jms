@@ -14,17 +14,17 @@ import com.demo.messaging.jms.service.GreetingService;
 @RestController
 public class GreetingController {
 
-	@Autowired
-	private GreetingService greetingService;
+    @Autowired
+    private GreetingService greetingService;
 
-	@GetMapping("/greeting")
-	public Message sayHelloWorld() {
-		return greetingService.sayHelloWorld();
-	}
+    @GetMapping("/greeting")
+    public Message sayHelloWorld() {
+        return greetingService.sayHelloWorld();
+    }
 
-	@PostMapping("/greeting")
-	public Message sayHelloWorldToUser(@Validated @RequestBody User user) {
-		return greetingService.sayHelloWorldToUser(user);
-	}
+    @PostMapping("/greeting")
+    public Message sayHelloWorldToUser(@Validated @RequestBody User user) {
+        return greetingService.sayHelloWorldToUser(user);
+    }
 
 }
