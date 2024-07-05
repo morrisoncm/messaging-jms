@@ -1,4 +1,4 @@
-package com.demo.template.domain;
+package com.demo.messaging.jms.domain;
 
 public class Message {
 
